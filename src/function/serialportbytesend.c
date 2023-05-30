@@ -4,12 +4,12 @@
 
 
 /**
- * @brief ´®¿Ú·¢ËÍn×Ö½Ú
+ * @brief ä¸²å£å‘é€nå­—èŠ‚
  * 
- * @param port ´®¿Ú¶Ë¿Ú('1','2')
- * @param uart ·¢ËÍÊı¾İÎ»Êı('8'Î»,'9'Î»)
- * @param dat ·¢ËÍµÄÊı¾İ
- * @param bytes Ò»¸öÊı¾İµÄ×Ö½ÚÊı
+ * @param port ä¸²å£ç«¯å£('1','2')
+ * @param uart å‘é€æ•°æ®ä½æ•°('8'ä½,'9'ä½)
+ * @param dat å‘é€çš„æ•°æ®
+ * @param bytes ä¸€ä¸ªæ•°æ®çš„å­—èŠ‚æ•°
  */
 void SendnBytes(uint8 port,uint8 uart,uint32 dat,uint8 bytes)
 {
@@ -47,10 +47,10 @@ void SendnBytes(uint8 port,uint8 uart,uint32 dat,uint8 bytes)
 }
 
 /**
- * @brief ·¢ËÍ×Ö·û´®
+ * @brief å‘é€å­—ç¬¦ä¸²
  * 
- * @param s ×Ö·û´®µØÖ·
- * @param port ´®¿Ú¶Ë¿Ú¶Ë¿Ú
+ * @param s å­—ç¬¦ä¸²åœ°å€
+ * @param port ä¸²å£ç«¯å£ç«¯å£
  */
 void SendString(uint8 port,uint8 *s)
 {
@@ -61,10 +61,10 @@ void SendString(uint8 port,uint8 *s)
 }
 
 /**
- * @brief ·¢ËÍÊı×Ö
+ * @brief å‘é€æ•°å­—
  * 
- * @param Num ÊäÈëÊı×Ö
- * @param port ´®¿Ú¶Ë¿Ú
+ * @param Num è¾“å…¥æ•°å­—
+ * @param port ä¸²å£ç«¯å£
  */
 void SendNum_Ascllc(uint8 port,float Num)
 {

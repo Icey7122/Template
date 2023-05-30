@@ -4,7 +4,7 @@
 
 
 /**
- * @brief Íâ²¿ÖĞ¶Ï0(P32)
+ * @brief å¤–éƒ¨ä¸­æ–­0(P32)
  * 
  */
 void Int0_Isr(void)	interrupt 0
@@ -13,7 +13,7 @@ void Int0_Isr(void)	interrupt 0
 }
 
 /**
- * @brief ¶¨Ê±Æ÷0ÖĞ¶Ï
+ * @brief å®šæ—¶å™¨0ä¸­æ–­
  * 
  */
 void Timer0_Isr(void) interrupt 1
@@ -22,7 +22,7 @@ void Timer0_Isr(void) interrupt 1
 }
 
 /**
- * @brief Íâ²¿ÖĞ¶Ï1(P33)
+ * @brief å¤–éƒ¨ä¸­æ–­1(P33)
  * 
  */
 void Int1_Isr(void)	interrupt 2
@@ -31,7 +31,7 @@ void Int1_Isr(void)	interrupt 2
 }
 
 /**
- * @brief ¶¨Ê±Æ÷1ÖĞ¶Ï
+ * @brief å®šæ—¶å™¨1ä¸­æ–­
  * 
  */
 void Timer1_Isr(void) interrupt 3
@@ -40,7 +40,7 @@ void Timer1_Isr(void) interrupt 3
 }
 
 /**
- * @brief ´®¿Ú1ÖĞ¶Ï
+ * @brief ä¸²å£1ä¸­æ–­
  * 
  */
 void UART_Isr(void) interrupt 4
@@ -59,7 +59,7 @@ void UART_Isr(void) interrupt 4
 }
 
 /**
- * @brief ADCÖĞ¶Ï
+ * @brief ADCä¸­æ–­
  * 
  */
 void ADC_Isr(void) interrupt 5
@@ -68,7 +68,7 @@ void ADC_Isr(void) interrupt 5
 }
 
 /**
- * @brief µÍÑ¹¼ì²âÖĞ¶Ï
+ * @brief ä½å‹æ£€æµ‹ä¸­æ–­
  * 
  */
 void LVD_Isr(void) interrupt 6
@@ -77,7 +77,7 @@ void LVD_Isr(void) interrupt 6
 }
 
 /**
- * @brief PCAÖĞ¶Ï
+ * @brief PCAä¸­æ–­
  * 
  */
 void PCA_Isr(void) interrupt 7
@@ -86,7 +86,7 @@ void PCA_Isr(void) interrupt 7
 }
 
 /**
- * @brief ´®¿Ú2ÖĞ¶Ï
+ * @brief ä¸²å£2ä¸­æ–­
  * 
  */
 void UART2_Isr(void) interrupt 8
@@ -105,7 +105,7 @@ void UART2_Isr(void) interrupt 8
 }
 
 /**
- * @brief SPIÖĞ¶Ï
+ * @brief SPIä¸­æ–­
  * 
  */
 void SPI_Isr(void) interrupt 9

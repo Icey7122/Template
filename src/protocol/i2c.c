@@ -3,11 +3,11 @@
 #include"delay.h"
 
 /**
- * @brief IIC¿ªÊ¼ĞÅºÅ
+ * @brief IICå¼€å§‹ä¿¡å·
  * 
- * @param SDA_io SDAÕë½Å
- * @param SCL_io SCLÕë½Å
- * @param delay ÑÓÊ±Ê±¼ä(Î¢Ãë)
+ * @param SDA_io SDAé’ˆè„š
+ * @param SCL_io SCLé’ˆè„š
+ * @param delay å»¶æ—¶æ—¶é—´(å¾®ç§’)
  */
 void IIC_Start(uint8 SDA_io,uint8 SCL_io,uint8 delay)
 {
@@ -25,11 +25,11 @@ void IIC_Start(uint8 SDA_io,uint8 SCL_io,uint8 delay)
 }
 
 /**
- * @brief IICÍ£Ö¹ĞÅºÅ
+ * @brief IICåœæ­¢ä¿¡å·
  * 
- * @param SDA_io SDAÕë½Å
- * @param SCL_io SCLÕë½Å
- * @param delay ÑÓÊ±Ê±¼ä(Î¢Ãë)
+ * @param SDA_io SDAé’ˆè„š
+ * @param SCL_io SCLé’ˆè„š
+ * @param delay å»¶æ—¶æ—¶é—´(å¾®ç§’)
  */
 void IIC_Stop(uint8 SDA_io,uint8 SCL_io,uint8 delay)
 {
@@ -44,11 +44,11 @@ void IIC_Stop(uint8 SDA_io,uint8 SCL_io,uint8 delay)
 }
 
 /**
- * @brief IICÓ¦´ğĞÅºÅ
+ * @brief IICåº”ç­”ä¿¡å·
  * 
- * @param SDA_io SDAÕë½Å
- * @param SCL_io SCLÕë½Å
- * @param delay ÑÓÊ±Ê±¼ä(Î¢Ãë)
+ * @param SDA_io SDAé’ˆè„š
+ * @param SCL_io SCLé’ˆè„š
+ * @param delay å»¶æ—¶æ—¶é—´(å¾®ç§’)
  */
 void IIC_Ack(uint8 SDA_io,uint8 SCL_io,uint8 delay)
 {
@@ -65,7 +65,7 @@ void IIC_Ack(uint8 SDA_io,uint8 SCL_io,uint8 delay)
         if(ErrTime > 200)
         {
             IIC_Stop(SDA_io,SCL_io,delay);
-            SendString('1',"Error:IIC NACK\n");//Êä³ö´íÎóĞÅÏ¢
+            SendString('1',"Error:IIC NACK\n");//è¾“å‡ºé”™è¯¯ä¿¡æ¯
             SendString('1',"Failed to call\n");
             break;            
         }
@@ -76,11 +76,11 @@ void IIC_Ack(uint8 SDA_io,uint8 SCL_io,uint8 delay)
 }
 
 /**
- * @brief IIC²»Ó¦´ğĞÅºÅ
+ * @brief IICä¸åº”ç­”ä¿¡å·
  * 
- * @param SDA_io SDAÕë½Å
- * @param SCL_io SCLÕë½Å
- * @param delay ÑÓÊ±Ê±¼ä(Î¢Ãë)
+ * @param SDA_io SDAé’ˆè„š
+ * @param SCL_io SCLé’ˆè„š
+ * @param delay å»¶æ—¶æ—¶é—´(å¾®ç§’)
  */
 void IIC_NAck(uint8 SDA_io,uint8 SCL_io,uint8 delay)
 {
@@ -93,12 +93,12 @@ void IIC_NAck(uint8 SDA_io,uint8 SCL_io,uint8 delay)
 }
 
 /**
- * @brief IIC¶ÁÈ¡Ò»¸ö×Ö½Ú
+ * @brief IICè¯»å–ä¸€ä¸ªå­—èŠ‚
  * 
- * @param dat Êı¾İ
- * @param SDA_io SDAÕë½Å
- * @param SCL_io SCLÕë½Å
- * @param delay ÑÓÊ±Ê±¼ä(Î¢Ãë)
+ * @param dat æ•°æ®
+ * @param SDA_io SDAé’ˆè„š
+ * @param SCL_io SCLé’ˆè„š
+ * @param delay å»¶æ—¶æ—¶é—´(å¾®ç§’)
  */
 void IIC_Write(uint8 dat,uint8 SDA_io,uint8 SCL_io,uint8 delay)
 {
@@ -123,12 +123,12 @@ void IIC_Write(uint8 dat,uint8 SDA_io,uint8 SCL_io,uint8 delay)
 }
 
 /**
- * @brief IIC¶ÁÈ¡Ò»¸ö×Ö½Ú
+ * @brief IICè¯»å–ä¸€ä¸ªå­—èŠ‚
  * 
- * @param SDA_io SDAÕë½Å
- * @param SCL_io SCLÕë½Å
- * @param delay ÑÓÊ±(Î¢Ãë)
- * @return uint8 ·µ»ØÖµ
+ * @param SDA_io SDAé’ˆè„š
+ * @param SCL_io SCLé’ˆè„š
+ * @param delay å»¶æ—¶(å¾®ç§’)
+ * @return uint8 è¿”å›å€¼
  */
 uint8 IIC_Read(uint8 SDA_io,uint8 SCL_io,uint8 delay)
 {

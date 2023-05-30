@@ -4,28 +4,28 @@
 
 void PCAInit0(void)
 {
-    CMOD = 0x81;            //¿ÕÏÐ×´Ì¬ÏÂ¼ÌÐø¹¤×÷,SYSclk/12,ÔÊÐíÖÐ¶Ï
-    CCON = 0x40;            //Æô¶¯PCA0¶¨Ê±Æ÷
-    CCAPM0 = 0x39;          //16Î»²¶»ñÄ£Ê½,ÆôÓÃÖÐ¶ÏCCF0
-    CCAP0L = 0;             //³õÊ¼»¯PCA¼ÆÊý¼Ä´æÆ÷
-    CCAP0H = 0;             //³õÊ¼»¯PCA¼ÆÊý¼Ä´æÆ÷
-    CL = 0;                 //ÇåÁãPCA¼ÆÊýÆ÷
-    CH = 0;                 //ÇåÁãPCA¼ÆÊýÆ÷
+    CMOD = 0x81;            //ç©ºé—²çŠ¶æ€ä¸‹ç»§ç»­å·¥ä½œ,SYSclk/12,å…è®¸ä¸­æ–­
+    CCON = 0x40;            //å¯åŠ¨PCA0å®šæ—¶å™¨
+    CCAPM0 = 0x39;          //16ä½æ•èŽ·æ¨¡å¼,å¯ç”¨ä¸­æ–­CCF0
+    CCAP0L = 0;             //åˆå§‹åŒ–PCAè®¡æ•°å¯„å­˜å™¨
+    CCAP0H = 0;             //åˆå§‹åŒ–PCAè®¡æ•°å¯„å­˜å™¨
+    CL = 0;                 //æ¸…é›¶PCAè®¡æ•°å™¨
+    CH = 0;                 //æ¸…é›¶PCAè®¡æ•°å™¨
 
-    EA = 1;                 //¿ª×ÜÖÐ¶Ï
+    EA = 1;                 //å¼€æ€»ä¸­æ–­
 }
 
 void PCAInit1(void)
 {
-    CMOD = 0x81;            //¿ÕÏÐ×´Ì¬ÏÂ¼ÌÐø¹¤×÷,Õë½ÅÊä³öÍâ²¿Ê±ÖÓ,½ûÖ¹ÖÐ¶Ï
-    CCON = 0x40;            //Æô¶¯PCA¶¨Ê±Æ÷
-    CCAPM1 = 0x39;          //16Î»²¶»ñÄ£Ê½,ÆôÓÃÖÐ¶ÏCCF1
-    CCAP1L = 0;             //³õÊ¼»¯PCA¼ÆÊý¼Ä´æÆ÷
-    CCAP1H = 0;             //³õÊ¼»¯PCA¼ÆÊý¼Ä´æÆ÷
-    CL = 0;                 //ÇåÁãPCA¼ÆÊýÆ÷
-    CH = 0;                 //ÇåÁãPCA¼ÆÊýÆ÷
+    CMOD = 0x81;            //ç©ºé—²çŠ¶æ€ä¸‹ç»§ç»­å·¥ä½œ,é’ˆè„šè¾“å‡ºå¤–éƒ¨æ—¶é’Ÿ,ç¦æ­¢ä¸­æ–­
+    CCON = 0x40;            //å¯åŠ¨PCAå®šæ—¶å™¨
+    CCAPM1 = 0x39;          //16ä½æ•èŽ·æ¨¡å¼,å¯ç”¨ä¸­æ–­CCF1
+    CCAP1L = 0;             //åˆå§‹åŒ–PCAè®¡æ•°å¯„å­˜å™¨
+    CCAP1H = 0;             //åˆå§‹åŒ–PCAè®¡æ•°å¯„å­˜å™¨
+    CL = 0;                 //æ¸…é›¶PCAè®¡æ•°å™¨
+    CH = 0;                 //æ¸…é›¶PCAè®¡æ•°å™¨
 
-    EA = 1;                 //¿ª×ÜÖÐ¶Ï
+    EA = 1;                 //å¼€æ€»ä¸­æ–­
 }
 
 

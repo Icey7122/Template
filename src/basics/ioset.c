@@ -4,10 +4,10 @@
 
 
 /**
- * @brief »ñµÃI/O×´Ì¬
+ * @brief è·å¾—I/OçŠ¶æ€
  * 
- * @param io Ñ¡ÔñI/O¿Ú
- * @return int8 ·µ»ØÉèÖÃĞÅÏ¢Öµ(Ê§°Ü:-1)
+ * @param io é€‰æ‹©I/Oå£
+ * @return int8 è¿”å›è®¾ç½®ä¿¡æ¯å€¼(å¤±è´¥:-1)
  */
 int8 GetIO_Sta(uint8 io)
 {
@@ -63,10 +63,10 @@ int8 GetIO_Sta(uint8 io)
 }
 
 /**
- * @brief ÉèÖÃI/O×´Ì¬
+ * @brief è®¾ç½®I/OçŠ¶æ€
  * 
- * @param io I/O¿Ú
- * @return int8 ·µ»Øµ±Ç°Ä£Ê½(Ê§°Ü:-1)
+ * @param io I/Oå£
+ * @return int8 è¿”å›å½“å‰æ¨¡å¼(å¤±è´¥:-1)
  */
 int8 GetIO_Model(uint8 io)
 {
@@ -125,11 +125,11 @@ int8 GetIO_Model(uint8 io)
 }
 
 /**
- * @brief ÉèÖÃI/O×´Ì¬
+ * @brief è®¾ç½®I/OçŠ¶æ€
  * 
- * @param io I/O¿Ú
- * @param status ÉèÖÃ×´Ì¬
- * @return int8 ·µ»ØÉèÖÃºóµÄ×´Ì¬(Ê§°Ü:-1)
+ * @param io I/Oå£
+ * @param status è®¾ç½®çŠ¶æ€
+ * @return int8 è¿”å›è®¾ç½®åçš„çŠ¶æ€(å¤±è´¥:-1)
  */
 int8 SetIO_Sta(uint8 io,bit status)
 {
@@ -187,11 +187,11 @@ int8 SetIO_Sta(uint8 io,bit status)
 }
 
 /**
- * @brief µ¥¸öI/OÉèÖÃ
+ * @brief å•ä¸ªI/Oè®¾ç½®
  * 
- * @param io Ñ¡ÔñI/O
- * @param model Ñ¡ÔñÄ£Ê½(0:×¼Ë«Ïò¿Ú,1:Ç¿ÍÆÍìÊä³ö,2:¸ß×èÊäÈë,3:¿ªÂ©(P1¿Ú¾ßÓĞA/D¹¦ÄÜ)
- * @return int8 ·µ»ØÉèÖÃºóµÄ×´Ì¬(Ê§°Ü:-1)
+ * @param io é€‰æ‹©I/O
+ * @param model é€‰æ‹©æ¨¡å¼(0:å‡†åŒå‘å£,1:å¼ºæ¨æŒ½è¾“å‡º,2:é«˜é˜»è¾“å…¥,3:å¼€æ¼(P1å£å…·æœ‰A/DåŠŸèƒ½)
+ * @return int8 è¿”å›è®¾ç½®åçš„çŠ¶æ€(å¤±è´¥:-1)
  */
 int8 SetIO_Model(uint8 io,uint8 model)
 {
@@ -251,15 +251,15 @@ int8 SetIO_Model(uint8 io,uint8 model)
 }
 
 /**
- * @brief ÉèÖÃÕû¸öI/O×´Ì¬
+ * @brief è®¾ç½®æ•´ä¸ªI/OçŠ¶æ€
  * PnM1:1100,0000
  * PnM0:1010,0000
- * Pn.7:¿ªÂ©Êä³ö,Pn.6:¸ß×èÊäÈë,Pn.5:Ç¿ÍÆÍìÊä³ö,Pn.4:×¼Ë«Ïò¿Ú
+ * Pn.7:å¼€æ¼è¾“å‡º,Pn.6:é«˜é˜»è¾“å…¥,Pn.5:å¼ºæ¨æŒ½è¾“å‡º,Pn.4:å‡†åŒå‘å£
  * 
- * @param bitPort ×Ü¶Ë¿ÚÎ»ÖÃ
- * @param M1 ¼Ä´æÆ÷PnM1µÄÖµ
- * @param M0 ¼Ä´æÆ÷PnM0µÄÖµ
- * @return int8 ·µ»ØÉèÖÃºóµÄ×´Ì¬(Ê§°Ü:-1)
+ * @param bitPort æ€»ç«¯å£ä½ç½®
+ * @param M1 å¯„å­˜å™¨PnM1çš„å€¼
+ * @param M0 å¯„å­˜å™¨PnM0çš„å€¼
+ * @return int8 è¿”å›è®¾ç½®åçš„çŠ¶æ€(å¤±è´¥:-1)
  */
 int8 SetIOs_Model(uint8 bitPort,uint8 M1,uint8 M0)
 {

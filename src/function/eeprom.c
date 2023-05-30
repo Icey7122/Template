@@ -7,13 +7,13 @@
 #define ADDRESS_READ 0xA1
 
 /**
- * @brief Ğ´Èë×Ö·û´®µ½eeprom
+ * @brief å†™å…¥å­—ç¬¦ä¸²åˆ°eeprom
  * 
- * @param p ×Ö·û´®Ö¸Õë
- * @param start ÆğÊ¼µØÖ·
- * @param SDA_io SDAÒı½Å
- * @param SCL_io SCLÒı½Å
- * @param delay ÑÓÊ±
+ * @param p å­—ç¬¦ä¸²æŒ‡é’ˆ
+ * @param start èµ·å§‹åœ°å€
+ * @param SDA_io SDAå¼•è„š
+ * @param SCL_io SCLå¼•è„š
+ * @param delay å»¶æ—¶
  */
 void EEPR_WriteCs(uint8 *p,uint8 start,uint8 SDA_io,uint8 SCL_io,uint8 delay)
 {
@@ -33,13 +33,13 @@ void EEPR_WriteCs(uint8 *p,uint8 start,uint8 SDA_io,uint8 SCL_io,uint8 delay)
 }
 
 /**
- * @brief ¶ÁÈ¡eepromÖĞµÄ×Ö·û´®
+ * @brief è¯»å–eepromä¸­çš„å­—ç¬¦ä¸²
  * 
- * @param startread ÆğÊ¼µØÖ·
- * @param longth ¶ÁÈ¡³¤¶È
- * @param SDA_io SDAÒı½Å
- * @param SCL_io SCLÒı½Å
- * @param delay ÑÓÊ±
+ * @param startread èµ·å§‹åœ°å€
+ * @param longth è¯»å–é•¿åº¦
+ * @param SDA_io SDAå¼•è„š
+ * @param SCL_io SCLå¼•è„š
+ * @param delay å»¶æ—¶
  */
 void EEPR_ReadCs(uint8 startread,uint8 longth,uint8 SDA_io,uint8 SCL_io,uint8 delay)
 {
