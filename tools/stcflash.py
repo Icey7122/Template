@@ -138,227 +138,227 @@ class Programmer:
                                      (0x20, 0x2F): ("LE", "052"),
                                      (0x30, 0x3F): ("LE", "052AD"),
                                      }),
-                    0xF2A0: ("15W", 1, {(0xA0, 0xA5): ("1", ""),   #STC15W1绯诲垪
+                    0xF2A0: ("15W", 1, {(0xA0, 0xA5): ("1", ""),   #STC15W1系列
                                      }),
-                    0xF400: ("15F", 8, {(0x00, 0x07): ("2K", "S2"),   #STC15F2K绯诲垪
+                    0xF400: ("15F", 8, {(0x00, 0x07): ("2K", "S2"),   #STC15F2K系列
                                      }),
-                    0xF407: ("15F", 60, {(0x07, 0x08): ("2K", "S2"),   #STC15F2K绯诲垪
+                    0xF407: ("15F", 60, {(0x07, 0x08): ("2K", "S2"),   #STC15F2K系列
                                      }),
-                    0xF408: ("15F", 61, {(0x08, 0x09): ("2K", "S2"),   #STC15F2K绯诲垪
+                    0xF408: ("15F", 61, {(0x08, 0x09): ("2K", "S2"),   #STC15F2K系列
                                      }),
-                    0xF400: ("15F", 4, {(0x09, 0x0C): ("4", "AD"),   #STC15FAD绯诲垪
+                    0xF400: ("15F", 4, {(0x09, 0x0C): ("4", "AD"),   #STC15FAD系列
                                      }),
-                    0xF410: ("15F", 8, {(0x10, 0x17): ("1K", "AS"),   #STC15F1KAS绯诲垪
+                    0xF410: ("15F", 8, {(0x10, 0x17): ("1K", "AS"),   #STC15F1KAS系列
                                      }),
-                    0xF417: ("15F", 60, {(0x17, 0x18): ("1K", "AS"),   #STC15F1KAS绯诲垪
+                    0xF417: ("15F", 60, {(0x17, 0x18): ("1K", "AS"),   #STC15F1KAS系列
                                      }),
-                    0xF418: ("15F", 61, {(0x18, 0x19): ("1K", "AS"),   #STC15F1KAS绯诲垪
+                    0xF418: ("15F", 61, {(0x18, 0x19): ("1K", "AS"),   #STC15F1KAS系列
                                      }),
-                    0xF420: ("15F", 8, {(0x20, 0x27): ("1K", "S"),   #STC15F1KS绯诲垪
+                    0xF420: ("15F", 8, {(0x20, 0x27): ("1K", "S"),   #STC15F1KS系列
                                      }),
-                    0xF427: ("15F", 60, {(0x27, 0x28): ("1K", "S"),   #STC15F1KS绯诲垪
+                    0xF427: ("15F", 60, {(0x27, 0x28): ("1K", "S"),   #STC15F1KS系列
                                      }),
-                    0xF440: ("15F", 8, {(0x40, 0x47): ("1K", "S2"),   #STC15F1KS2绯诲垪
+                    0xF440: ("15F", 8, {(0x40, 0x47): ("1K", "S2"),   #STC15F1KS2系列
                                      }),
-                    0xF447: ("15F", 60, {(0x47, 0x48): ("1K", "S2"),   #STC15F1KS2绯诲垪
+                    0xF447: ("15F", 60, {(0x47, 0x48): ("1K", "S2"),   #STC15F1KS2系列
                                      }),
-                    0xF448: ("15F", 61, {(0x48, 0x49): ("1K", "S2"),   #STC15F1KS2绯诲垪
+                    0xF448: ("15F", 61, {(0x48, 0x49): ("1K", "S2"),   #STC15F1KS2系列
                                      }),
                     0xF44C: ("15F", 13, {(0x4C, 0x4D): ("4", "AD"),  
                                      }),
-                    0xF450: ("15F", 8, {(0x50, 0x57): ("1K", "AS"),   #STC15F1KAS绯诲垪
+                    0xF450: ("15F", 8, {(0x50, 0x57): ("1K", "AS"),   #STC15F1KAS系列
                                      }),
-                    0xF457: ("15F", 60, {(0x57, 0x58): ("1K", "AS"),   #STC15F1KAS绯诲垪
+                    0xF457: ("15F", 60, {(0x57, 0x58): ("1K", "AS"),   #STC15F1KAS系列
                                      }),
-                    0xF458: ("15F", 61, {(0x58, 0x59): ("1K", "AS"),   #STC15F1KAS绯诲垪
+                    0xF458: ("15F", 61, {(0x58, 0x59): ("1K", "AS"),   #STC15F1KAS系列
                                      }),
-                    0xF460: ("15F", 8, {(0x60, 0x67): ("1K", "S"),   #STC15F1KS绯诲垪
+                    0xF460: ("15F", 8, {(0x60, 0x67): ("1K", "S"),   #STC15F1KS系列
                                      }),
-                    0xF467: ("15F", 60, {(0x67, 0x68): ("1K", "S"),   #STC15F1KS绯诲垪
+                    0xF467: ("15F", 60, {(0x67, 0x68): ("1K", "S"),   #STC15F1KS系列
                                      }),
-                    0xF468: ("15F", 61, {(0x68, 0x69): ("1K", "S"),   #STC15F1KS绯诲垪
+                    0xF468: ("15F", 61, {(0x68, 0x69): ("1K", "S"),   #STC15F1KS系列
                                      }),
-                    0xF480: ("15L", 8, {(0x80, 0x87): ("2K", "S2"),   #STC15L2KS2绯诲垪
+                    0xF480: ("15L", 8, {(0x80, 0x87): ("2K", "S2"),   #STC15L2KS2系列
                                      }),
-                    0xF487: ("15L", 60, {(0x87, 0x88): ("2K", "S2"),   #STC15L2KS2绯诲垪
+                    0xF487: ("15L", 60, {(0x87, 0x88): ("2K", "S2"),   #STC15L2KS2系列
                                      }),
-                    0xF488: ("15L", 61, {(0x88, 0x89): ("2K", "S2"),   #STC15L2KS2绯诲垪
+                    0xF488: ("15L", 61, {(0x88, 0x89): ("2K", "S2"),   #STC15L2KS2系列
                                      }),
-                    0xF489: ("15L", 5, {(0x89, 0x8C): ("4", "AD"),   #STC15L4AD绯诲垪
+                    0xF489: ("15L", 5, {(0x89, 0x8C): ("4", "AD"),   #STC15L4AD系列
                                      }),
-                    0xF490: ("15L", 8, {(0x90, 0x97): ("2K", "AS"),   #STC15L2KAS绯诲垪
+                    0xF490: ("15L", 8, {(0x90, 0x97): ("2K", "AS"),   #STC15L2KAS系列
                                      }),
-                    0xF497: ("15L", 60, {(0x97, 0x98): ("2K", "AS"),   #STC15L2KAS绯诲垪
+                    0xF497: ("15L", 60, {(0x97, 0x98): ("2K", "AS"),   #STC15L2KAS系列
                                      }),
-                    0xF498: ("15L", 61, {(0x98, 0x99): ("2K", "AS"),   #STC15L2KAS绯诲垪
+                    0xF498: ("15L", 61, {(0x98, 0x99): ("2K", "AS"),   #STC15L2KAS系列
                                      }),
-                    0xF4A0: ("15L", 8, {(0xA0, 0xA7): ("2K", "S"),   #STC15L2KS绯诲垪
+                    0xF4A0: ("15L", 8, {(0xA0, 0xA7): ("2K", "S"),   #STC15L2KS系列
                                      }),
-                    0xF4A7: ("15L", 60, {(0xA7, 0xA8): ("2K", "S"),   #STC15L2KS绯诲垪
+                    0xF4A7: ("15L", 60, {(0xA7, 0xA8): ("2K", "S"),   #STC15L2KS系列
                                      }),
-                    0xF4A8: ("15L", 61, {(0xA8, 0xA9): ("2K", "S"),   #STC15L2KS绯诲垪
+                    0xF4A8: ("15L", 61, {(0xA8, 0xA9): ("2K", "S"),   #STC15L2KS系列
                                      }),
-                    0xF4C0: ("15L", 8, {(0xC0, 0xC7): ("1K", "S2"),   #STC15L1KS2绯诲垪
+                    0xF4C0: ("15L", 8, {(0xC0, 0xC7): ("1K", "S2"),   #STC15L1KS2系列
                                      }),
-                    0xF4C7: ("15L", 60, {(0xC7, 0xC8): ("1K", "S2"),   #STC15L1KS2绯诲垪
+                    0xF4C7: ("15L", 60, {(0xC7, 0xC8): ("1K", "S2"),   #STC15L1KS2系列
                                      }),
-                    0xF4C8: ("15L", 61, {(0xC8, 0xC9): ("1K", "S2"),   #STC15L1KS2绯诲垪
+                    0xF4C8: ("15L", 61, {(0xC8, 0xC9): ("1K", "S2"),   #STC15L1KS2系列
                                      }),
                     0xF4CC: ("15L", 13, {(0xCC, 0xCD): ("4", "AD"),   
                                      }),
-                    0xF4D0: ("15L", 8, {(0xD0, 0xD7): ("1K", "AS"),   #STC15L1KS2绯诲垪
+                    0xF4D0: ("15L", 8, {(0xD0, 0xD7): ("1K", "AS"),   #STC15L1KS2系列
                                      }),
-                    0xF4D7: ("15L", 60, {(0xD7, 0xD8): ("1K", "AS"),   #STC15L1KS2绯诲垪
+                    0xF4D7: ("15L", 60, {(0xD7, 0xD8): ("1K", "AS"),   #STC15L1KS2系列
                                      }),
-                    0xF4D8: ("15L", 61, {(0xD8, 0xD9): ("1K", "AS"),   #STC15L1KS2绯诲垪
+                    0xF4D8: ("15L", 61, {(0xD8, 0xD9): ("1K", "AS"),   #STC15L1KS2系列
                                      }),
-                    0xF4E0: ("15L", 8, {(0xE0, 0xE7): ("1K", "S"),   #STC15L1KS绯诲垪
+                    0xF4E0: ("15L", 8, {(0xE0, 0xE7): ("1K", "S"),   #STC15L1KS系列
                                      }),
-                    0xF4E7: ("15L", 60, {(0xE7, 0xE8): ("1K", "S"),   #STC15L1KS绯诲垪
+                    0xF4E7: ("15L", 60, {(0xE7, 0xE8): ("1K", "S"),   #STC15L1KS系列
                                      }),
-                    0xF4E8: ("15L", 61, {(0xE8, 0xE9): ("1K", "S"),   #STC15L1KS绯诲垪
+                    0xF4E8: ("15L", 61, {(0xE8, 0xE9): ("1K", "S"),   #STC15L1KS系列
                                      }),
-                    0xF500: ("15W", 1, {(0x00, 0x04): ("1", "SW"),   #STC15W1SW绯诲垪
+                    0xF500: ("15W", 1, {(0x00, 0x04): ("1", "SW"),   #STC15W1SW系列
                                      }),
-                    0xF507: ("15W", 1, {(0x07, 0x0B): ("1", "S"),   #STC15W1S绯诲垪
+                    0xF507: ("15W", 1, {(0x07, 0x0B): ("1", "S"),   #STC15W1S系列
                                      }),
-                    0xF510: ("15W", 1, {(0x10, 0x14): ("2", "S"),   #STC15W2S绯诲垪
+                    0xF510: ("15W", 1, {(0x10, 0x14): ("2", "S"),   #STC15W2S系列
                                      }),
-                    0xF514: ("15W", 8, {(0x14, 0x17): ("1K", "S"),   #STC15W1KS绯诲垪
+                    0xF514: ("15W", 8, {(0x14, 0x17): ("1K", "S"),   #STC15W1KS系列
                                      }),
-                    0xF518: ("15W", 4, {(0x18, 0x1A): ("4", "S"),   #STC15W4S绯诲垪
+                    0xF518: ("15W", 4, {(0x18, 0x1A): ("4", "S"),   #STC15W4S系列
                                      }),
-                    0xF51A: ("15W", 4, {(0x1A, 0x1C): ("4", "S"),   #STC15W4S绯诲垪
+                    0xF51A: ("15W", 4, {(0x1A, 0x1C): ("4", "S"),   #STC15W4S系列
                                      }),
-                    0xF51C: ("15W", 4, {(0x1C, 0x1F): ("4", "AS"),   #STC15W4AS绯诲垪
+                    0xF51C: ("15W", 4, {(0x1C, 0x1F): ("4", "AS"),   #STC15W4AS系列
                                      }),
-                    0xF51F: ("15W", 10, {(0x19, 0x20): ("4", "AS"),   #STC15W4AS绯诲垪
+                    0xF51F: ("15W", 10, {(0x19, 0x20): ("4", "AS"),   #STC15W4AS系列
                                      }),
-                    0xF520: ("15W", 12, {(0x20, 0x21): ("4", "AS"),   #STC15W4AS绯诲垪
+                    0xF520: ("15W", 12, {(0x20, 0x21): ("4", "AS"),   #STC15W4AS系列
                                      }),
-                    0xF522: ("15W", 16, {(0x22, 0x23): ("4K", "S4"),   #STC15W4KS4绯诲垪
+                    0xF522: ("15W", 16, {(0x22, 0x23): ("4K", "S4"),   #STC15W4KS4系列
                                      }),
-                    0xF523: ("15W",24, {(0x23, 0x24): ("4K", "S4"),   #STC15W4KS4绯诲垪
+                    0xF523: ("15W",24, {(0x23, 0x24): ("4K", "S4"),   #STC15W4KS4系列
                                      }),
-                    0xF524: ("15W", 32, {(0x24, 0x25): ("4K", "S4"),   #STC15W4KS4绯诲垪
+                    0xF524: ("15W", 32, {(0x24, 0x25): ("4K", "S4"),   #STC15W4KS4系列
                                      }),
-                    0xF525: ("15W", 40, {(0x25, 0x26): ("4K", "S4"),   #STC15W4KS4绯诲垪
+                    0xF525: ("15W", 40, {(0x25, 0x26): ("4K", "S4"),   #STC15W4KS4系列
                                      }),
-                    0xF526: ("15W", 48, {(0x26, 0x27): ("4K", "S4"),   #STC15W4KS4绯诲垪
+                    0xF526: ("15W", 48, {(0x26, 0x27): ("4K", "S4"),   #STC15W4KS4系列
                                      }),
-                    0xF527: ("15W", 56, {(0x27, 0x28): ("4K", "S4"),   #STC15W4KS4绯诲垪
+                    0xF527: ("15W", 56, {(0x27, 0x28): ("4K", "S4"),   #STC15W4KS4系列
                                      }),
-                    0xF529: ("15W", 1, {(0x29, 0x2B): ("4", "A4"),   #STC15W4AS绯诲垪
+                    0xF529: ("15W", 1, {(0x29, 0x2B): ("4", "A4"),   #STC15W4AS系列
                                      }),
-                    0xF52C: ("15W", 8, {(0x2C, 0x2E): ("1K", "PWM"),   #STC15W1KPWM绯诲垪
+                    0xF52C: ("15W", 8, {(0x2C, 0x2E): ("1K", "PWM"),   #STC15W1KPWM系列
                                      }),
-                    0xF52E: ("15W", 20, {(0x2E, 0x2F): ("1K", "S"),   #STC15W1KS绯诲垪
+                    0xF52E: ("15W", 20, {(0x2E, 0x2F): ("1K", "S"),   #STC15W1KS系列
                                      }),
-                    0xF52F: ("15W", 32, {(0x2F, 0x30): ("2K", "S2"),   #STC15W2KS2绯诲垪
+                    0xF52F: ("15W", 32, {(0x2F, 0x30): ("2K", "S2"),   #STC15W2KS2系列
                                      }),
-                    0xF530: ("15W", 48, {(0x30, 0x31): ("2K", "S2"),   #STC15W2KS2绯诲垪
+                    0xF530: ("15W", 48, {(0x30, 0x31): ("2K", "S2"),   #STC15W2KS2系列
                                      }),
-                    0xF531: ("15W", 32, {(0x31, 0x32): ("2K", "S2"),   #STC15W2KS2绯诲垪
+                    0xF531: ("15W", 32, {(0x31, 0x32): ("2K", "S2"),   #STC15W2KS2系列
                                      }),
-                    0xF533: ("15W", 20, {(0x33, 0x34): ("1K", "S2"),   #STC15W1KS2绯诲垪
+                    0xF533: ("15W", 20, {(0x33, 0x34): ("1K", "S2"),   #STC15W1KS2系列
                                      }),
-                    0xF534: ("15W", 32, {(0x34, 0x35): ("1K", "S2"),   #STC15W1KS2绯诲垪
+                    0xF534: ("15W", 32, {(0x34, 0x35): ("1K", "S2"),   #STC15W1KS2系列
                                      }),
-                    0xF535: ("15W", 48, {(0x35, 0x36): ("1K", "S2"),   #STC15W1KS2绯诲垪
+                    0xF535: ("15W", 48, {(0x35, 0x36): ("1K", "S2"),   #STC15W1KS2系列
                                      }),
-                    0xF544: ("15W", 5, {(0x44, 0x45): ("", "SW"),   #STC15SW绯诲垪
+                    0xF544: ("15W", 5, {(0x44, 0x45): ("", "SW"),   #STC15SW系列
                                      }),
-                    0xF554: ("15W", 5, {(0x54, 0x55): ("2", "S"),   #STC15W2S绯诲垪
+                    0xF554: ("15W", 5, {(0x54, 0x55): ("2", "S"),   #STC15W2S系列
                                      }),
-                    0xF557: ("15W", 29, {(0x57, 0x58): ("1K", "S"),   #STC15W1KS绯诲垪
+                    0xF557: ("15W", 29, {(0x57, 0x58): ("1K", "S"),   #STC15W1KS系列
                                      }),
-                    0xF55C: ("15W", 13, {(0x5C, 0x5D): ("4", "S"),   #STC15W4S绯诲垪
+                    0xF55C: ("15W", 13, {(0x5C, 0x5D): ("4", "S"),   #STC15W4S系列
                                      }),
-                    0xF568: ("15W", 58, {(0x68, 0x69): ("4K", "S4"),   #STC15W4KS4绯诲垪
+                    0xF568: ("15W", 58, {(0x68, 0x69): ("4K", "S4"),   #STC15W4KS4系列
                                      }),
-                    0xF569: ("15W", 61, {(0x69, 0x6A): ("4K", "S4"),   #STC15W4KS4绯诲垪
+                    0xF569: ("15W", 61, {(0x69, 0x6A): ("4K", "S4"),   #STC15W4KS4系列
                                      }),
-                    0xF56C: ("15W", 58, {(0x6C, 0x6D): ("4K", "S4-Student"),   #STC15W4KS4绯诲垪
+                    0xF56C: ("15W", 58, {(0x6C, 0x6D): ("4K", "S4-Student"),   #STC15W4KS4系列
                                      }),
-                    0xF57E: ("15U", 8, {(0x7E, 0x85): ("4K", "S4"),   #STC15U4KS4绯诲垪
+                    0xF57E: ("15U", 8, {(0x7E, 0x85): ("4K", "S4"),   #STC15U4KS4系列
                                      }),
-                    0xF600: ("15H", 8, {(0x00, 0x08): ("4K", "S4"),   #STC154K绯诲垪
+                    0xF600: ("15H", 8, {(0x00, 0x08): ("4K", "S4"),   #STC154K系列
                                      }),
-                    0xF620: ("8A", 8, {(0x20, 0x28): ("8K", "S4A12"),   #STC8A8K绯诲垪
+                    0xF620: ("8A", 8, {(0x20, 0x28): ("8K", "S4A12"),   #STC8A8K系列
                                      }),
-                    0xF628: ("8A", 60, {(0x28, 0x29): ("8K", "S4A12"),   #STC8A8K绯诲垪
+                    0xF628: ("8A", 60, {(0x28, 0x29): ("8K", "S4A12"),   #STC8A8K系列
                                      }),
-                    0xF630: ("8F", 8, {(0x30, 0x38): ("2K", "S4"),   #STC8F2K绯诲垪
+                    0xF630: ("8F", 8, {(0x30, 0x38): ("2K", "S4"),   #STC8F2K系列
                                      }),
-                    0xF638: ("8F", 60, {(0x38, 0x39): ("2K", "S4"),   #STC8F2K绯诲垪
+                    0xF638: ("8F", 60, {(0x38, 0x39): ("2K", "S4"),   #STC8F2K系列
                                      }),
-                    0xF640: ("8F", 8, {(0x40, 0x48): ("2K", "S2"),   #STC8F2K绯诲垪
+                    0xF640: ("8F", 8, {(0x40, 0x48): ("2K", "S2"),   #STC8F2K系列
                                      }),
-                    0xF648: ("8F", 60, {(0x48, 0x49): ("2K", "S2"),   #STC8F2K绯诲垪
+                    0xF648: ("8F", 60, {(0x48, 0x49): ("2K", "S2"),   #STC8F2K系列
                                      }),
-                    0xF650: ("8A", 8, {(0x50, 0x58): ("4K", "S2A12"),   #STC8A4K绯诲垪
+                    0xF650: ("8A", 8, {(0x50, 0x58): ("4K", "S2A12"),   #STC8A4K系列
                                      }),
-                    0xF658: ("8A", 60, {(0x58, 0x59): ("4K", "S2A12"),   #STC8A4K绯诲垪
+                    0xF658: ("8A", 60, {(0x58, 0x59): ("4K", "S2A12"),   #STC8A4K系列
                                      }),
-                    0xF660: ("8F", 2, {(0x60, 0x66): ("1K", "S2"),   #STC8F1K绯诲垪
+                    0xF660: ("8F", 2, {(0x60, 0x66): ("1K", "S2"),   #STC8F1K系列
                                      }),
-                    0xF666: ("8F", 17, {(0x66, 0x67): ("1K", "S2"),   #STC8F1K绯诲垪
+                    0xF666: ("8F", 17, {(0x66, 0x67): ("1K", "S2"),   #STC8F1K系列
                                      }),
-                    0xF670: ("8F", 2, {(0x70, 0x76): ("1K", ""),   #STC8F1K绯诲垪
+                    0xF670: ("8F", 2, {(0x70, 0x76): ("1K", ""),   #STC8F1K系列
                                      }),
-                    0xF676: ("8F", 17, {(0x76, 0x77): ("1K", ""),   #STC8F1K绯诲垪
+                    0xF676: ("8F", 17, {(0x76, 0x77): ("1K", ""),   #STC8F1K系列
                                      }),
-                    0xF700: ("8C", 2, {(0x00, 0x06): ("1K", ""),   #STC8C绯诲垪
+                    0xF700: ("8C", 2, {(0x00, 0x06): ("1K", ""),   #STC8C系列
                                      }),   
-                    0xF730: ("8H", 2, {(0x30, 0x36): ("1K", ""),   #STC8H1K绯诲垪
+                    0xF730: ("8H", 2, {(0x30, 0x36): ("1K", ""),   #STC8H1K系列
                                      }),
-                    0xF736: ("8H", 17, {(0x36, 0x37): ("1K", ""),   #STC8H1K绯诲垪
+                    0xF736: ("8H", 17, {(0x36, 0x37): ("1K", ""),   #STC8H1K系列
                                      }),
-                    0xF740: ("8H", 8, {(0x40, 0x42): ("3K", "S4"),   #STC8H3K绯诲垪
+                    0xF740: ("8H", 8, {(0x40, 0x42): ("3K", "S4"),   #STC8H3K系列
                                      }),
-                    0xF742: ("8H", 60, {(0x42, 0x43): ("3K", "S4"),   #STC8H3K绯诲垪
+                    0xF742: ("8H", 60, {(0x42, 0x43): ("3K", "S4"),   #STC8H3K系列
                                      }),
-                    0xF743: ("8H", 64, {(0x43, 0x44): ("3K", "S4"),   #STC8H3K绯诲垪
+                    0xF743: ("8H", 64, {(0x43, 0x44): ("3K", "S4"),   #STC8H3K系列
                                      }),
-                    0xF748: ("8H", 16, {(0x48, 0x4A): ("3K", "S2"),   #STC8H3K绯诲垪
+                    0xF748: ("8H", 16, {(0x48, 0x4A): ("3K", "S2"),   #STC8H3K系列
                                      }),
-                    0xF74A: ("8H", 60, {(0x4A, 0x4B): ("3K", "S2"),   #STC8H3K绯诲垪
+                    0xF74A: ("8H", 60, {(0x4A, 0x4B): ("3K", "S2"),   #STC8H3K系列
                                      }),
-                    0xF74B: ("8H", 64, {(0x4B, 0x4C): ("3K", "S2"),   #STC8H3K绯诲垪
+                    0xF74B: ("8H", 64, {(0x4B, 0x4C): ("3K", "S2"),   #STC8H3K系列
                                      }),
-                    0xF750: ("8G", 2, {(0x50, 0x56): ("1K", "-20/16pin"),   #STC8G1K绯诲垪
+                    0xF750: ("8G", 2, {(0x50, 0x56): ("1K", "-20/16pin"),   #STC8G1K系列
                                      }),
-                    0xF756: ("8G", 17, {(0x56, 0x57): ("1K", "-20/16pin"),   #STC8G1K绯诲垪
+                    0xF756: ("8G", 17, {(0x56, 0x57): ("1K", "-20/16pin"),   #STC8G1K系列
                                      }),
-                    0xF760: ("8G", 16, {(0x60, 0x62): ("2K", "S4"),   #STC8G2K绯诲垪
+                    0xF760: ("8G", 16, {(0x60, 0x62): ("2K", "S4"),   #STC8G2K系列
                                      }),
-                    0xF762: ("8G", 60, {(0x62, 0x63): ("2K", "S4"),   #STC8G2K绯诲垪
+                    0xF762: ("8G", 60, {(0x62, 0x63): ("2K", "S4"),   #STC8G2K系列
                                      }),
-                    0xF763: ("8G", 64, {(0x63, 0x64): ("2K", "S4"),   #STC8G2K绯诲垪
+                    0xF763: ("8G", 64, {(0x63, 0x64): ("2K", "S4"),   #STC8G2K系列
                                      }),
-                    0xF768: ("8G", 16, {(0x68, 0x6A): ("2K", "S2"),   #STC8G2K绯诲垪
+                    0xF768: ("8G", 16, {(0x68, 0x6A): ("2K", "S2"),   #STC8G2K系列
                                      }),
-                    0xF76A: ("8G", 60, {(0x6A, 0x6B): ("2K", "S2"),   #STC8G2K绯诲垪
+                    0xF76A: ("8G", 60, {(0x6A, 0x6B): ("2K", "S2"),   #STC8G2K系列
                                      }),
-                    0xF76B: ("8G", 64, {(0x6B, 0x6C): ("2K", "S2"),   #STC8G2K绯诲垪
+                    0xF76B: ("8G", 64, {(0x6B, 0x6C): ("2K", "S2"),   #STC8G2K系列
                                      }),
-                    0xF770: ("8G", 2, {(0x70, 0x76): ("1K", "T"),   #STC8G2K绯诲垪
+                    0xF770: ("8G", 2, {(0x70, 0x76): ("1K", "T"),   #STC8G2K系列
                                      }),
-                    0xF776: ("8G", 17, {(0x76, 0x77): ("1K", "T"),   #STC8G2K绯诲垪
+                    0xF776: ("8G", 17, {(0x76, 0x77): ("1K", "T"),   #STC8G2K系列
                                      }),
-                    0xF780: ("8H", 16, {(0x80, 0x82): ("8K", "U"),   #STC8H8K绯诲垪
+                    0xF780: ("8H", 16, {(0x80, 0x82): ("8K", "U"),   #STC8H8K系列
                                      }),
-                    0xF782: ("8H", 60, {(0x82, 0x83): ("8K", "U"),   #STC8H8K绯诲垪
+                    0xF782: ("8H", 60, {(0x82, 0x83): ("8K", "U"),   #STC8H8K系列
                                      }),
-                    0xF783: ("8H", 64, {(0x83, 0x84): ("8K", "U"),   #STC8H8K绯诲垪
+                    0xF783: ("8H", 64, {(0x83, 0x84): ("8K", "U"),   #STC8H8K系列
                                      }),
-                    0xF790: ("8G", 2, {(0x90, 0x96): ("1K", "A-8PIN"),   #STC8G1K绯诲垪
+                    0xF790: ("8G", 2, {(0x90, 0x96): ("1K", "A-8PIN"),   #STC8G1K系列
                                      }),
-                    0xF796: ("8G", 17, {(0x96, 0x97): ("1K", "A-8PIN"),   #STC8G1K绯诲垪
+                    0xF796: ("8G", 17, {(0x96, 0x97): ("1K", "A-8PIN"),   #STC8G1K系列
                                      }),
-                    0xF7A0: ("8G", 2, {(0xA0, 0xA6): ("1K", "-8PIN"),   #STC8G1K绯诲垪
+                    0xF7A0: ("8G", 2, {(0xA0, 0xA6): ("1K", "-8PIN"),   #STC8G1K系列
                                      }),
-                    0xF7A6: ("8G", 17, {(0xA6, 0xA7): ("1K", "-8PIN"),   #STC8G1K绯诲垪
+                    0xF7A6: ("8G", 17, {(0xA6, 0xA7): ("1K", "-8PIN"),   #STC8G1K系列
                                      }),
                     }
 
@@ -453,7 +453,7 @@ class Programmer:
         while time.time() < timeout:
             try:
                 if self.__conn_read(len(start)) == start:
-                    time.sleep(0.02) #鍔犱笂20ms寤舵椂锛屽澶ф帴鏀舵垚鍔熺巼
+                    time.sleep(0.02) #加上20ms延时，增大接收成功率
                     break
             except IOError:
                 continue
@@ -542,10 +542,10 @@ class Programmer:
                                  0xE1: PROTOCOL_12C52,    #STC12C52x
                                  0xE2: PROTOCOL_12C5A,    #STC11Fx
                                  0xE6: PROTOCOL_12C52,    #STC12C56x
-                                 0xF4: PROTOCOL_15,    #STC15绯诲垪
-                                 0xF5: PROTOCOL_15,    #STC15绯诲垪
-                                 0xF6: PROTOCOL_8,  #STC8绯诲垪
-                                 0xF7: PROTOCOL_8,  #STC8绯诲垪
+                                 0xF4: PROTOCOL_15,    #STC15系列
+                                 0xF5: PROTOCOL_15,    #STC15系列
+                                 0xF6: PROTOCOL_8,  #STC8系列
+                                 0xF7: PROTOCOL_8,  #STC8系列
                                  }[self.model[0]]
             except KeyError:
                 pass
@@ -604,22 +604,22 @@ class Programmer:
                          % (i // 16,
                             " ".join(["%02X" % j for j in self.info[i:i+16]])))
     def print_info(self):
-        print("绯荤粺鏃堕挓棰戠巼: %.3fMHz" % self.fosc)
+        print("系统时钟频率: %.3fMHz" % self.fosc)
         if self.protocol in PROTOSET_8:
-            print("鎺夌數鍞ら啋瀹氭椂鍣ㄩ鐜�: %.3fKHz" % self.wakeup_fosc)
-            print("鍐呴儴鍙傝€冪數鍘�: %d mV" %self.internal_vol)
-            print("浣庡帇妫€娴嬬數鍘�: %.1f V" %self.det_low_vol) 
-            print("鍐呴儴瀹夋帓娴嬭瘯鏃堕棿: 20%s骞�%s鏈�%s鏃�" %(self.test_year,self.test_month,self.test_day))           
+            print("掉电唤醒定时器频率: %.3fKHz" % self.wakeup_fosc)
+            print("内部参考电压: %d mV" %self.internal_vol)
+            print("低压检测电压: %.1f V" %self.det_low_vol) 
+            print("内部安排测试时间: 20%s年%s月%s日" %(self.test_year,self.test_month,self.test_day))           
 
         if self.protocol in PROTOSET_15:
-            print("鎺夌數鍞ら啋瀹氭椂鍣ㄩ鐜�: %.3fKHz" % self.wakeup_fosc)
-            print("鍐呴儴鍙傝€冪數鍘�: %d mV" %self.internal_vol) 
-            print("鍐呴儴瀹夋帓娴嬭瘯鏃堕棿: 20%s骞�%s鏈�%s鏃�" %(self.test_year,self.test_month,self.test_day))   
+            print("掉电唤醒定时器频率: %.3fKHz" % self.wakeup_fosc)
+            print("内部参考电压: %d mV" %self.internal_vol) 
+            print("内部安排测试时间: 20%s年%s月%s日" %(self.test_year,self.test_month,self.test_day))   
 
-        print("鍗曠墖鏈哄瀷鍙�: %s" % self.name)
-        print("鍥轰欢鐗堟湰鍙�: %s" % self.version)
+        print("单片机型号: %s" % self.name)
+        print("固件版本号: %s" % self.version)
         if self.romsize is not None:
-            print("绋嬪簭绌洪棿: %dKB" % self.romsize)
+            print("程序空间: %dKB" % self.romsize)
 
         if self.protocol == PROTOCOL_89:
             switches = [( 2, 0x80, "Reset stops                                                                                                  "),
@@ -655,13 +655,13 @@ class Programmer:
         baud0 = self.conn.baudrate
         
         if self.protocol in PROTOSET_8:
-            baud = 115200 #鑻ユ病鎸囧畾娉㈢壒鐜囷紝榛樿涓�115200
+            baud = 115200 #若没指定波特率，默认为115200
             if highbaud_pre != 115200:
                 baud = highbaud_pre
-            #鏀寔460800浠ュ唴鐨勪换鎰忔尝鐗圭巼
-            #鍏稿瀷娉㈢壒鐜囷細460800銆�230400銆�115200銆�57600銆�38400銆�28800銆�19200銆�14400銆�9600銆�4800
+            #支持460800以内的任意波特率
+            #典型波特率：460800、230400、115200、57600、38400、28800、19200、14400、9600、4800
             if baud in range(460801): 
-                #瀹氭椂鍣�1閲嶈浇鍊艰绠楀井璋冿紝鍙兘鐢变簬鐩爣鑺墖鐨勫樊寮傛€ч渶瑕佸井璋�
+                #定时器1重载值计算微调，可能由于目标芯片的差异性需要微调
                 if baud in [300000,350000]:
                     Timer1_value = int(65536.2 - float(24.0 * 1000000 / 4 / baud))  
                 else: 
@@ -704,13 +704,13 @@ class Programmer:
             self.__conn_baudrate(baud)
             self.baudrate = baud
         elif self.protocol in PROTOSET_15:
-            baud = 115200 #鑻ユ病鎸囧畾娉㈢壒鐜囷紝榛樿涓�115200
+            baud = 115200 #若没指定波特率，默认为115200
             if highbaud_pre != 115200:
                 baud = highbaud_pre
-            #鏀寔460800浠ュ唴鐨勪换鎰忔尝鐗圭巼
-            #鍏稿瀷娉㈢壒鐜囷細460800銆�230400銆�115200銆�57600銆�38400銆�28800銆�19200銆�14400銆�9600銆�4800
+            #支持460800以内的任意波特率
+            #典型波特率：460800、230400、115200、57600、38400、28800、19200、14400、9600、4800
             if baud in range(460801): 
-                #瀹氭椂鍣�1閲嶈浇鍊艰绠楀井璋冿紝鍙兘鐢变簬鐩爣鑺墖鐨勫樊寮傛€ч渶瑕佸井璋�
+                #定时器1重载值计算微调，可能由于目标芯片的差异性需要微调
                 if baud in [300000,350000]:
                     Timer1_value = int(65536.2 - float(22.1184 * 1000000 / 4 / baud))  
                 else: 
@@ -849,7 +849,7 @@ class Programmer:
                 serial_number = serial_number +str(i)
             self.serial_number = str(serial_number)
             print("\r")
-            sys.stdout.write("鑺墖鍑哄巶搴忓垪鍙�: ")
+            sys.stdout.write("芯片出厂序列号: ")
             sys.stdout.write(self.serial_number.upper())
             sys.stdout.flush()
             print("\r")
@@ -969,24 +969,24 @@ def autoisp(conn, baud, magic):
 
 
 def program(prog, code, erase_eeprom=None):
-    sys.stdout.write("妫€娴嬬洰鏍�...")
+    sys.stdout.write("检测目标...")
     sys.stdout.flush()
 
     prog.detect()
 
-    print("瀹屾垚")
+    print("完成")
 
     prog.print_info() 
 
     if prog.protocol is None:
-        raise IOError("鏈煡鐩爣")
+        raise IOError("未知目标")
 
     if code is None:
         return
 
     prog.unknown_packet_1() 
 
-    sys.stdout.write("鍒囨崲鑷虫渶楂樻尝鐗圭巼: ")
+    sys.stdout.write("切换至最高波特率: ")
     sys.stdout.flush()
 
     prog.handshake() 
@@ -995,20 +995,20 @@ def program(prog, code, erase_eeprom=None):
 
     prog.unknown_packet_2()
 
-    sys.stdout.write("寮€濮嬫摝闄よ姱鐗�...")
+    sys.stdout.write("开始擦除芯片...")
     sys.stdout.flush()
 
     time_start = time.time()
 
     prog.erase() 
 
-    print("鎿﹂櫎瀹屾垚")
+    print("擦除完成")
 
-    print("浠ｇ爜闀垮害: %d bytes" % len(code)) 
+    print("代码长度: %d bytes" % len(code)) 
 
 
     # print("Programming: ", end="", flush=True)
-    sys.stdout.write("姝ｅ湪涓嬭浇鐢ㄦ埛浠ｇ爜...")  
+    sys.stdout.write("正在下载用户代码...")  
     sys.stdout.flush()  
 
     oldbar = 0
@@ -1018,21 +1018,21 @@ def program(prog, code, erase_eeprom=None):
         sys.stdout.flush()   
         oldbar = bar
 
-    print(" 瀹屾垚")
+    print(" 完成")
 
     prog.unknown_packet_3() 
 
-    sys.stdout.write("璁剧疆閫夐」...") 
+    sys.stdout.write("设置选项...") 
     sys.stdout.flush()
 
     if prog.options(erase_eeprom=erase_eeprom):
-        print("璁剧疆瀹屾垚")
+        print("设置完成")
     else:
-        print("璁剧疆澶辫触")
+        print("设置失败")
 
     prog.terminate() 
     time_end = time.time()
-    print("鑰楁椂: %.3fs"% (time_end-time_start))
+    print("耗时: %.3fs"% (time_end-time_start))
 
 
 # Convert Intel HEX code to binary format
@@ -1396,7 +1396,7 @@ def main():
     else:
         code = None
 
-    print("閫氫俊绔彛锛�%s  鏈€浣庢尝鐗圭巼锛�%d bps" % (opts.port, opts.lowbaud))
+    print("通信端口：%s  最低波特率：%d bps" % (opts.port, opts.lowbaud))
     
     global highbaud_pre
     highbaud_pre = opts.highbaud
