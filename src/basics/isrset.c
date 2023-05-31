@@ -1,5 +1,6 @@
 #include<STC12C5A60S2.H>
 #include"typedefine.h"
+#include"isrset.h"
 
 
 /**
@@ -39,7 +40,6 @@ void ISRp_Set(uint8 isr,uint8 priority)
  * status 0:CF(PCA/PWM时钟溢出中断)关闭 status 1:开启CF中断 
  * status 2:CCF0(捕获或匹配中断)关闭 status 3:开启CCF0中断
  * status 4:CCF1(捕获或匹配中断)关闭 status 5:开启CCF1中断)
- * 
  * status 0-5仅对PCA有精确控制,其他中断只有开启和关闭两种状态
  */
 void ISR_Sw(uint8 isr,uint8 status)
@@ -68,21 +68,20 @@ void ISR_Sw(uint8 isr,uint8 status)
 }
 
 /**
- * @brief 外部中断0初始化
- * 
+ * @brief 外部中断初始化
+ * @param exint 选择外部中断(0:外部中断0 1:外部中断1)
+ * @param set 0:低电平触发 1:下降沿触发
  */
-void ExterInterruptInit0(void)   
+void ExterIsrInit(bit exint,bit set)   
 {
-	EX0 = 1;	//打开中断0
-	IT0 = 1;	//设置方式为下行中断
-}
-
-/**
- * @brief 外部中断1初始化
- * 
- */
-void ExterInterruptInit1(void)
-{
-	EX1 = 1;	//打开中断1
-	IT1 = 1;	//设置方式为下行中断
+    if(exint)
+    {
+        ISR_Sw(2,1);	//打开中断1
+        IT1 = set;	//设置方式为下行中断  
+    }
+    else
+    {
+        ISR_Sw(0,1);	//打开中断0
+        IT0 = set;	//设置方式为下行中断      
+    }
 }

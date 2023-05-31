@@ -3,10 +3,10 @@
 
 #include"typedefine.h"
 
+
 void ISRp_Set(uint8 isr,uint8 priority);
 void ISR_Sw(uint8 isr,uint8 status);
-void ExterInterruptInit0(void);
-void ExterInterruptInit1(void);
+void ExterIsrInit(bit exint,bit set);
 
 #endif // !
 
