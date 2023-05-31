@@ -1319,7 +1319,7 @@ def stc_type_map(type, value):
 def main(): 
  
     if sys.platform == "win32":
-        port = "COM3"
+        port = "COM5"
     elif sys.platform == "darwin":
         port = "/dev/tty.usbserial"
     else:
@@ -1396,11 +1396,11 @@ def main():
     else:
         code = None
 
-    print("通信端口：%s  最低波特率：%d bps" % (opts.port, opts.lowbaud))
+    print("通信端口：%s  最低波特率：%d bps" % (port, opts.lowbaud))
     
     global highbaud_pre
     highbaud_pre = opts.highbaud
-    with serial.Serial(port=opts.port,
+    with serial.Serial(port,
                        baudrate=opts.lowbaud,
                        parity=serial.PARITY_NONE) as conn:
         if opts.aispmagic:
