@@ -31,8 +31,8 @@
       "custom_dep": {
         "name": "default",
         "incList": [
-          "../../../../../Keil/C51/INC/STC",
-          "head"
+          "head/user",
+          "head/standard/STC"
         ],
         "libList": [],
         "sourceDirList": [],
