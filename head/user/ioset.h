@@ -6,8 +6,8 @@
 
 int8 GetIO_Sta(uint8 io);
 int8 GetIO_Model(uint8 io);
-int8 SetIO_Sta(uint8 io,bit status);
-int8 SetIO_Model(uint8 io,uint8 model);
+void SetIO_Sta(uint8 io,bit status);
+void SetIO_Model(uint8 io,uint8 model);
 int8 SetIOs_Model(uint8 bitPort,uint8 M1,uint8 M0);
 
 

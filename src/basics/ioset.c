@@ -131,59 +131,38 @@ int8 GetIO_Model(uint8 io)
  * @param status 设置状态
  * @return int8 返回设置后的状态(失败:-1)
  */
-int8 SetIO_Sta(uint8 io,bit status)
+void SetIO_Sta(uint8 io,bit status)
 {
-    switch (io)
+    if(io >= 0 && io <= 07)
     {
-        case 00:P00 = status;break;
-        case 01:P01 = status;break;
-        case 02:P02 = status;break;
-        case 03:P03 = status;break;
-        case 04:P04 = status;break;
-        case 05:P05 = status;break;
-        case 06:P06 = status;break;
-        case 07:P07 = status;break;
-        case 10:P10 = status;break;
-        case 11:P11 = status;break;
-        case 12:P12 = status;break;
-        case 13:P13 = status;break;
-        case 14:P14 = status;break;
-        case 15:P15 = status;break;
-        case 16:P16 = status;break;
-        case 17:P17 = status;break;
-        case 20:P20 = status;break;
-        case 21:P21 = status;break;
-        case 22:P22 = status;break;
-        case 23:P23 = status;break;
-        case 24:P24 = status;break;
-        case 25:P25 = status;break;
-        case 26:P26 = status;break;
-        case 27:P27 = status;break;
-        case 30:P30 = status;break;
-        case 31:P31 = status;break;
-        case 32:P32 = status;break;
-        case 33:P33 = status;break;
-        case 34:P34 = status;break;
-        case 35:P35 = status;break;
-        case 36:P36 = status;break;
-        case 37:P37 = status;break;
-        case 40:P40 = status;break;
-        case 41:P41 = status;break;
-        case 42:P42 = status;break;
-        case 43:P43 = status;break;
-        case 44:P44 = status;break;
-        case 45:P45 = status;break;
-        case 46:P46 = status;break;
-        case 47:P47 = status;break;
-        case 50:P50 = status;break;
-        case 51:P51 = status;break;
-        case 52:P52 = status;break;
-        case 53:P53 = status;break;
-
-        default:return EOF;
+        io = io - 0;
+        if(status){P0 |= 1 << io;}else{P0 &= ~(1 << io);}
     }
-
-    return GetIO_Sta(io);
+    else if(io >= 10 && io <= 17)
+    {
+        io = io - 10;
+        if(status){P1 |= 1 << io;}else{P1 &= ~(1 << io);}
+    }
+    else if(io >= 20 && io <= 27)
+    {
+        io = io - 20;
+        if(status){P2 |= 1 << io;}else{P2 &= ~(1 << io);}
+    }
+    else if(io >= 30 && io <= 37)
+    {
+        io = io - 30;
+        if(status){P3 |= 1 << io;}else{P3 &= ~(1 << io);}
+    }
+    else if(io >= 40 && io <= 47)
+    {
+        io = io - 40;
+        if(status){P4 |= 1 << io;}else{P4 &= ~(1 << io);}
+    }
+    else if(io >= 50 && io <= 57)
+    {
+        io = io - 50;
+        if(status){P5 |= 1 << io;}else{P5 &= ~(1 << io);}
+    }
 }
 
 /**
@@ -193,7 +172,7 @@ int8 SetIO_Sta(uint8 io,bit status)
  * @param model 选择模式(0:准双向口,1:强推挽输出,2:高阻输入,3:开漏(P1口具有A/D功能)
  * @return int8 返回设置后的状态(失败:-1)
  */
-int8 SetIO_Model(uint8 io,uint8 model)
+void SetIO_Model(uint8 io,uint8 model)
 {
     bit M1 = (model & 0x02) >> 1;
     bit M0 = model & 0x01;
@@ -243,11 +222,8 @@ int8 SetIO_Model(uint8 io,uint8 model)
         case 51:if(M1){P5M1 |= 1<<1;}else{P5M1 &= ~(1<<1);}if(M0){P5M0 |= 1<<1;}else{P5M0 &= ~(1<<1);}break;
         case 52:if(M1){P5M1 |= 1<<2;}else{P5M1 &= ~(1<<2);}if(M0){P5M0 |= 1<<2;}else{P5M0 &= ~(1<<2);}break;
         case 53:if(M1){P5M1 |= 1<<3;}else{P5M1 &= ~(1<<3);}if(M0){P5M0 |= 1<<3;}else{P5M0 &= ~(1<<3);}break;
-    
-        default:return EOF;
+        default:break;
     }
-
-    return GetIO_Model(io);
 }
 
 /**
@@ -261,18 +237,17 @@ int8 SetIO_Model(uint8 io,uint8 model)
  * @param M0 寄存器PnM0的值
  * @return int8 返回设置后的状态(失败:-1)
  */
-int8 SetIOs_Model(uint8 bitPort,uint8 M1,uint8 M0)
+void SetIOs_Model(uint8 bitPort,uint8 M1,uint8 M0)
 {
     switch(bitPort)
     {
-        case 0:P0M1 = M1;P0M0 = M0;return 1;
-        case 1:P1M1 = M1;P1M0 = M0;return 1;
-        case 2:P2M1 = M1;P2M0 = M0;return 1;
-        case 3:P3M1 = M1;P3M0 = M0;return 1;
-        case 4:P4M1 = M1;P4M0 = M0;return 1;
-        case 5:P5M1 = M1;P5M0 = M0;return 1;
-
-        default:return EOF;
+        case 0:P0M1 = M1;P0M0 = M0;break;
+        case 1:P1M1 = M1;P1M0 = M0;break;
+        case 2:P2M1 = M1;P2M0 = M0;break;
+        case 3:P3M1 = M1;P3M0 = M0;break;
+        case 4:P4M1 = M1;P4M0 = M0;break;
+        case 5:P5M1 = M1;P5M0 = M0;break;
+        default:break;
     }
 }
 
