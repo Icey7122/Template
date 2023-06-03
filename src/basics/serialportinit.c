@@ -1,7 +1,12 @@
 #include<STC12C5A60S2.H>
 #include"typedefine.h"
+#include"timerinit.h"
+#include"ioset.h"
 
 #define SYSclk 12000000L		//频率12Mhz
+
+static uint8 TXD_port;
+static bit timer;
 
 /**
  * @brief 串口1初始化(波特率加倍)
@@ -96,6 +101,77 @@ void Uartprot2Init(uint16 rate,uint8 uart,uint8 T,bit isr)
 	{
 		IE2 &= 0xFE;					//禁止串口2中断
 	}
+}
+
+/**
+ * @brief 改变模拟串口的端口
+ * 
+ * @param io 输入io
+ */
+void ChgSumi_Port(uint8 io)
+{
+	TXD_port = io;
+}
+
+/**
+ * @brief 模拟串口初始化
+ * 
+ * @param io 选择io口作为串口
+ * @param timer1 选择定时器
+ * @param rate 波特率
+ */
+void UartprotSimuInit(uint8 io,bit timer1,uint16 rate)
+{
+    uint8 T = 12;
+    uint16 time = 1000000/rate;
+	timer = timer1;
+	ChgSumi_Port(io);
+
+	if(time <= 20)
+	{
+		T = 1;
+		time = 12000000/rate;
+	}		
+	Timer_Init(timer,time,T,0,0,0,'2');
+	Timer_Sw(timer,0);		
+}
+
+/**
+ * @brief 等待溢出标志
+ * 
+ * @param timer 选择定时器
+ */
+void WaitTF(bit timer)
+{
+    if(timer){while(!TF1);TF1 = 0;}else{while(!TF0);TF0 = 0;}	//检测定时器是否溢出
+}
+
+/**
+ * @brief 模拟串口发送数据
+ * 
+ * @param dat 数据
+ */
+void Simu_TXD(uint8 dat)
+{   
+    uint8 i;
+	
+	Timer_Sw(timer,1);							//开启定时器
+	WaitTF(timer);								//对齐延时
+
+    SetIO_Sta(TXD_port,0);                          
+	WaitTF(timer);
+    
+    for(i = 0;i < 8;i++)
+    {
+        SetIO_Sta(TXD_port,(dat & 0x01));
+        dat >>= 1;
+		WaitTF(timer);
+    }
+
+    SetIO_Sta(TXD_port,1);                         
+	WaitTF(timer);
+
+	Timer_Sw(timer,0);							//关闭定时器
 }
 
 

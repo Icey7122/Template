@@ -3,7 +3,6 @@
 #include"timerinit.h"
 #include"serialport.h"
 
-uint8 time = 0;
 
 /**
  * @brief 外部中断0(P32)

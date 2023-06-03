@@ -2,6 +2,8 @@
 #include<stdio.h>
 #include"typedefine.h"
 
+void Simu_TXD(uint8 dat);
+
 
 /**
  * @brief 串口发送n字节
@@ -33,6 +35,10 @@ void SendnBytes(uint8 port,uint8 uart,uint32 dat,uint8 bytes)
                 case '9':S2BUF = (uint16)(dat & 0x1FF);break;
                 default:break;
             }
+        }
+        else if(port == '3')
+        {
+            Simu_TXD((uint8)(dat & 0xFF));
         }
 		dat >>= (uart - 48);   
         switch (port)

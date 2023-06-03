@@ -16,7 +16,9 @@
   },
   "targets": {
     "Release": {
-      "excludeList": [],
+      "excludeList": [
+        "src/protocol/simuserialport.c"
+      ],
       "toolchain": "Keil_C51",
       "compileConfig": {
         "options": ""
