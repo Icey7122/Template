@@ -7,13 +7,13 @@
  * 
  * @param time 输入时间值(1T:(1/12)us,12T:1us)
  * @param timer 选择对定时器0或者定时器1(0:定时器0,1:定时器1)
- * @param model '0':13位定时器,'1':16位定时器,'2':8位自动重装载,'3':8位定时器(定时器0会使用定时器1的中断标志)
+ * @param model 0:13位定时器,1:16位定时器,2:8位自动重装载,3:8位定时器(定时器0会使用定时器1的中断标志)
  */
 void TimerCalcu(uint16 time,bit timer,uint8 model)
 {
 	switch(model)
 	{
-		case '0':						//13位定时器
+		case 0:						//13位定时器
 		{
 			if(timer)
 			{
@@ -27,7 +27,7 @@ void TimerCalcu(uint16 time,bit timer,uint8 model)
 			}
 			break;
 		}
-		case '1':						//16位定时器
+		case 1:						//16位定时器
 		{
 			if(timer)
 			{
@@ -41,7 +41,7 @@ void TimerCalcu(uint16 time,bit timer,uint8 model)
 			}
 			break;			
 		}
-		case '2':						//8位自动重装载定时器
+		case 2:						//8位自动重装载定时器
 		{
 			if(timer)
 			{TH1 = TL1 = (uint8)(256-time);}
@@ -49,7 +49,7 @@ void TimerCalcu(uint16 time,bit timer,uint8 model)
 			{TH0 = TL0 = (uint8)(256-time);}
 			break;
 		}
-		case '3':						//2个8位定时器
+		case 3:						//2个8位定时器
 		{
 			if(timer)
 			{TH0 = (uint8)(256-time);}
@@ -85,7 +85,7 @@ void Timer_Sw(bit timer,bit Sw)
  * @param isr 中断开关
  * @param CT 定时器或者计数器(0:定时器,1:计数器(定时器1:P3.5,定时器0:P3.4))
  * @param gate 连锁开关(gate为1时,只有TR0为1和INT0为高时才能计数/定时)
- * @param model 定时器模式('0':13位定时器,'1':16位定时器,'2':8位自动重装定时器,'3':2个8位定时器)
+ * @param model 定时器模式(0:13位定时器,1:16位定时器,2:8位自动重装定时器,3:2个8位定时器)
  */
 void Timer_Init(bit timer,uint16 time,uint8 T,bit isr,bit CT,bit gate,uint8 model)
 {
